@@ -5,7 +5,31 @@
 	<meta charset="UTF-8">
 	<title>Women Clothing Web Template</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-<script src="https://assets.adobedtm.com/de3a66fdc88b/9f7f6519a9d0/launch-9d19942c379c-development.min.js" async></script>
+
+	<!-- ✅ DATA LAYER (ADD THIS FIRST) -->
+	<script>
+	window.adobeDataLayer = [{
+	  page: {
+	    name: document.title,
+	    url: window.location.href
+	  },
+	  user: {
+	    id: "user123",
+	    loggedIn: true
+	  },
+	  ecommerce: {
+	    detail: {
+	      products: [{
+	        id: "p1",
+	        name: "Women Dress"
+	      }]
+	    }
+	  }
+	}];
+	</script>
+
+	<!-- ✅ ADOBE LAUNCH SCRIPT -->
+	<script src="https://assets.adobedtm.com/de3a66fdc88b/9f7f6519a9d0/launch-9d19942c379c-development.min.js" async></script>
 
 </head>
 <body>
