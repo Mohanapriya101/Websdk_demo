@@ -134,4 +134,16 @@
 		</p>
 	</div>
 </body>
+
+	<script>
+// Track form started
+document.getElementById('name').addEventListener('focus', function() {
+    window.formStarted = true;
+});
+
+// Track form submitted
+document.getElementById('vistida-form').addEventListener('submit', function() {
+    window.formSubmitted = true;
+});
+</script>
 </html>
